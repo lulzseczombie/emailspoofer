@@ -7,7 +7,12 @@ usage: python ./spoofcheck.py example.com<br>
 <br>
 <br>
 spammer.py is an email spoofing program that is still in development, but is functional<br>
-spammer.py has the same dependencies as spoofcheck.py<br>
+<br>
+spammer.py requires an smtp server to function. I am using postfix (sudo apt-get install postfix -y)<br>
+<br>
+spammer.py has the same dependencies as spoofcheck.py otherwise<br>
+sudo pip install colorama && sudo pip install emailprotectionslib && sudo pip install tldextract <br>
+<br>
 usage instructions: python ./spammer.py --help <br>
 usage: spammer.py [-h] [-t TO_ADDRESS] [-a TO_ADDRESS_FILENAME] <br>
                   [-f FROM_ADDRESS] [-n FROM_NAME] [-c] [-j SUBJECT] <br>
